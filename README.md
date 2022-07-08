@@ -4,8 +4,8 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/hectorsevillasandoval/expenses-chart-component)
+- Live Site URL: [Add live site URL here](https://hectorsevillasandoval.github.io/expenses-chart-component/)
 
 ## Author
 
