@@ -1,0 +1,158 @@
+/*
+*   Variables
+*/
+
+@import "partials/reset";
+@import "partials/variables";
+
+body {
+    font-family: $main-font;
+    background-color: $cream;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+*{
+    font-family: $main-font;
+}
+
+main{
+    article{
+        height: 100vh;
+        display: flex;
+    }
+}
+
+.expenses{
+    width: 345px;
+    margin: auto;
+
+    @media screen and (min-width: 600px){
+        width: 500px;
+    }
+
+    header{
+        background-color: $soft-red;
+        color: white;
+        margin-bottom: 20px;
+        position: relative;
+        padding: 22px 28px 19px 28px;
+        @media #{$desktop}{
+            padding: 24px 30px 20px 30px;
+        }
+    }
+    
+    &__balance{
+        font-weight: 700;
+        font-size: 24px;
+        color: $very-pale-orange;
+        @media #{$desktop}{
+            font-size: 30px;
+        }
+        &-label{
+            font-size: 16px;
+            color: $cream;
+            margin-bottom: 1px;
+        }
+        &-logo{
+            position: absolute;
+            right: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &-details{
+        background-color: $very-pale-orange;
+        border-radius: 10px;
+        padding: 18px;
+
+        @media #{$desktop}{
+            padding: 34px 38px;
+            border-radius: 20px;
+        }
+
+        &__headline{
+            margin-bottom: 40px;
+            h2{
+                color: $dark-brown;
+                font-weight: 700;
+                font-size: 25px;
+
+                @media #{$desktop}{
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &__chart{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $cream;
+            @media #{$desktop}{
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+            }
+            #myChart{
+                height: 200px;
+                @media #{$desktop}{
+                    height: 170px;
+                }
+            }
+        }
+
+        &__footer{
+            &-wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+        }
+
+        &__total{
+            &-label{
+                color: $medium-brown;
+                font-size: 14px;
+                @media #{$desktop}{
+                    font-size: 16px;
+                }
+            }
+            &-amount{
+                font-size: 28px;
+                line-height: 32px;
+                color: $dark-brown;
+                font-weight: 700;
+                margin-top: 5px;
+                @media #{$desktop}{
+                    font-size: 42px;
+                }
+            }
+        }
+
+        &__balance{
+            text-align: right;
+            strong{
+                color: $dark-brown;
+                font-size: 16px;
+                @media #{$desktop}{
+                    font-size: 18px;
+                }
+            }
+            p{
+                color: $medium-brown;
+                line-height: 16px;
+                font-size: 14px;
+                @media #{$desktop}{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.rounded-box{
+    border-radius: 10px;
+    @media #{$desktop}{
+        border-radius: 20px;
+    }
+}

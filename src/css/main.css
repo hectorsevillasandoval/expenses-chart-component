@@ -1,1 +1,210 @@
-    
+/*
+*   Variables
+*/
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Variables
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	Media Queries
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	Fonts
+/*-----------------------------------------------------------------------------------*/
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27deg, 66%, 92%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+main article {
+  height: 100vh;
+  display: flex;
+}
+
+.expenses {
+  width: 345px;
+  margin: auto;
+}
+@media screen and (min-width: 600px) {
+  .expenses {
+    width: 500px;
+  }
+}
+.expenses header {
+  background-color: hsl(10deg, 79%, 65%);
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 22px 28px 19px 28px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses header {
+    padding: 24px 30px 20px 30px;
+  }
+}
+.expenses__balance {
+  font-weight: 700;
+  font-size: 24px;
+  color: hsl(33deg, 100%, 98%);
+}
+@media screen and (min-width: 1440px) {
+  .expenses__balance {
+    font-size: 30px;
+  }
+}
+.expenses__balance-label {
+  font-size: 16px;
+  color: hsl(27deg, 66%, 92%);
+  margin-bottom: 1px;
+}
+.expenses__balance-logo {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.expenses-details {
+  background-color: hsl(33deg, 100%, 98%);
+  border-radius: 10px;
+  padding: 18px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details {
+    padding: 34px 38px;
+    border-radius: 20px;
+  }
+}
+.expenses-details__headline {
+  margin-bottom: 40px;
+}
+.expenses-details__headline h2 {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  font-size: 25px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__headline h2 {
+    font-size: 28px;
+  }
+}
+.expenses-details__chart {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid hsl(27deg, 66%, 92%);
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__chart {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+.expenses-details__chart #myChart {
+  height: 200px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__chart #myChart {
+    height: 170px;
+  }
+}
+.expenses-details__footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.expenses-details__total-label {
+  color: hsl(28deg, 10%, 53%);
+  font-size: 14px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__total-label {
+    font-size: 16px;
+  }
+}
+.expenses-details__total-amount {
+  font-size: 28px;
+  line-height: 32px;
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  margin-top: 5px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__total-amount {
+    font-size: 42px;
+  }
+}
+.expenses-details__balance {
+  text-align: right;
+}
+.expenses-details__balance strong {
+  color: hsl(25deg, 47%, 15%);
+  font-size: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__balance strong {
+    font-size: 18px;
+  }
+}
+.expenses-details__balance p {
+  color: hsl(28deg, 10%, 53%);
+  line-height: 16px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1440px) {
+  .expenses-details__balance p {
+    font-size: 16px;
+  }
+}
+
+.rounded-box {
+  border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .rounded-box {
+    border-radius: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
